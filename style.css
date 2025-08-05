@@ -1,0 +1,37 @@
+.t_upper{
+    text-transform: uppercase;
+    color: aqua;
+    background-color: black;
+    padding: 10px;
+    
+
+}
+.t_lower{
+    text-transform:lowercase ;
+}
+.t_capitalize{
+    text-transform: capitalize
+}
+.t_center{
+    text-align: center;
+}
+.t_d_under{
+    text-decoration: underline;
+}
+.t_d_over{
+    text-decoration: overline;
+}
+.t_d_line{
+    text-decoration: line-through;
+}
+
+.t_decor {
+    text-decoration: underline overline line-through;
+}
+.t_indent{
+    text-indent: 150px;
+
+}
+.t_indent2{
+    line-height: 30px;
+}
