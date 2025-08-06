@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About Borders</title>
+    <style>
+      img {
+        height: 300px;
+      }
+      .border_img1 {
+        /* borde is used to change the border of the image in the HTML document. */
+        border: 8px solid red;
+        /* radius is used to change the border radius of the image in the HTML document. */
+        /* for all corners  */
+        border-radius: 20px;
+        /* you can also use different radius for each corner */
+      }
+      .border_img2 {
+        border: 8px dashed blue;
+        /* top right bottom left */
+        /* two way to write border radius in css */
+        /* 1st way: */
+
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 30px; */
+
+        /* border-radius: 10px 5px 20px 30px; */
+        border-radius: 20px 50px 20px 50px;
+      }
+      .border_img3 {
+        border: 8px dotted green;
+        /* you can also use percentage for border radius */
+        /* border-radius: 50% 20% 50% 20% / 30% 60% 30% 60%; */
+        /* this is used to create a circle */
+    border-radius: 50% 20% 50% 20% / 30% 60% 30% 60%;
+      }
+      .border_img4 {
+        border: 8px double purple;
+        border-color: RED GREEN BLUE rgb(226, 15, 191);
+      }
+      h1 {
+        color: rgb(19, 15, 2);
+        font-family: sans-serif;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgb(47, 247, 230);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Borders in Html</h1>
+    <img class="border_img1" src="/images/cat-9569386_1280.jpg" />
+    <img class="border_img2" src="/images/hand-9723837_640.jpg" />
+    <img class="border_img3" src="/images/iceberg-9729316_1280.jpg" />
+    <img class="border_img4" src="/images/hand-9723837_640.jpg" />
+  </body>
+</html>

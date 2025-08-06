@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* if you want to select an element by its class, use a dot before the class name. */
+        
+        .t_color{
+            color: red;
+        }
+        /* if you want to select an element by its id, use a hash before the id name */
+        #T_color{
+            background-color: black;
+        }
+        .t_size{
+            font-size: 50px;
+            font-family: sans-serif;
+            text-shadow: 4px 4px 6px red;
+        }
+        .t_font
+        {
+            font-family: monospace;
+            font-size: 30px;
+        
+        }
+        /* you can also combine classes */
+        .t_color{
+            color: rgb(228, 21, 100);
+        }
+        .t_shadow{
+            text-shadow: 2px 2px 4px rgb(19, 205, 238);
+        }
+        #transform{
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: monospace;
+            color: rgb(19, 205, 238);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="t_color" id="T_color">HI </h1>
+    <h1 class="t_size">Hello World</h1>
+    <!-- this is double class it can be used to select multiple classes at once -->
+    <h1 class="t_font t_color">This is Class</h1>
+    <h1 class="t_shadow">This is shadow class</h1>
+    <h1 id="transform">This is text transform</h1>
+    
+</body>
+</html>
