@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Css</title>
+    <style>
+      .liner {
+        height: 400px;
+        background: linear-gradient(90deg, #2193b0, #6dd5ed, #b721ff);
+      }
+
+      .heading1 {
+        font-size: 100px;
+        text-align: center;
+        padding-top: 110px;
+      }
+      .rgb {
+        height: 400px;
+        background: linear-gradient(
+          to right,
+          rgb(211, 95, 95),
+          rgb(27, 247, 27),
+          blue
+        );
+      }
+      .coolt {
+        font-size: 100px;
+        text-align: center;
+        padding-top: 110px;
+        color: white;
+        text-shadow: 5px 5px 20px rgb(247, 0, 255);
+      }
+      .radial {
+        height: 300px;
+        margin-top: 20px;
+        background: radial-gradient(circle, #43cea2, #185a9d, #b721ff);
+      }
+      .conic {
+        height: 300px;
+        margin-top: 20px;
+        background: conic-gradient(
+          from 90deg,
+          #f7971e,
+          #ffd200,
+          #21d4fd,
+          #b721ff,
+          #f7971e
+        );
+        /* you can also use conic-gradient for background */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conic"></div>
+    <!-- radial gradient means the color will be in circle form -->
+    <div class="radial"></div>
+    <!-- linear gradient means the color will be in linear form -->
+    <div class="liner">
+      <h1 class="heading1">I love India</h1>
+    </div>
+    <div class="rgb">
+      <h1 class="coolt">This is to right linear</h1>
+    </div>
+  </body>
+</html>
