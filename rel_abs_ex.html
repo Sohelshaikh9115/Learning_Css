@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative and absolute</title>
+    <style>
+        .hall{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            top: 100px;
+            left: 100px;
+        }
+        #tv{
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            background-color: aliceblue;
+            top: 10px;
+            left: 100px;
+        }
+        #sofa{
+            position: relative;
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            top: 100px;
+            left: 50px;
+            border-radius: 10px;
+        }
+        #fridgh{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(15, 218, 15);
+            top: 380px;
+            left: 200px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="hall">
+        <div id="tv">TV</div>
+        <div id="sofa">Sofa</div>
+        <div id="fridgh">fridgh</div>
+    </div>
+</body>
+</html>

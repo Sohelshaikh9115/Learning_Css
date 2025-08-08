@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+        font-size: 50px;
+        margin-top: 20px;
+        text-shadow: 2px 2px 4px black;
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: grey;
+        border: 2px solid red;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .box1 {
+        position: static; /* Default */
+        background-color: lightblue;
+      }
+      .box2 {
+        position: relative;
+        background-color: blueviolet;
+        top: 10px; /* Moves down 20px */
+        left: 300px; /* Moves right 300px */
+      }
+      .box3 {
+        position: absolute;
+        background-color: pink;
+        top: 100px; /* Moves down 100px from the top of the nearest positioned ancestor */
+        left: 300px; /* Moves right 50px from the left of the nearest positioned ancestor */
+      }
+      .box4 {
+        position: sticky;
+        top: 0; /* Sticks to the top of the viewport when scrolled */
+        background-color: lightgreen;
+      }
+        .box5 {
+            position: fixed;
+            bottom: 0; /* Sticks to the top of the viewport */
+            right: 0; /* Sticks to the left of the viewport */
+            width: 200px; /* Full width */
+            background-color: lightcoral;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Position : static (default), relative, absolute, fixed, sticky -->
+    <h1>Positioning Example</h1>
+    <!-- static is a default position in css. -->
+    <div class="box box1">Static</div>
+    <!-- relative is used to move the element from its normal position. -->
+    <div class="box box2">Relativ</div>
+    <!-- absolute is used to position the element relative to its nearest positioned ancestor. -->
+    <div class="box box3">Absolute</div>
+    <!-- sticky is used to position the element based on the user's scroll position. -->
+    <!-- It toggles between relative and fixed, depending on the scroll position. -->
+    <div class="box box4">Sticky</div>
+    <!-- fixed is used to position the element relative to the viewport. -->
+    <!-- It stays in the same position even when the page is scrolled. -->
+    <div class="box box5">Fixed</div>
+  </body>
