@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .container {
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      img:hover{
+        border: 4px solid black;
+      }
+      .fleximg {
+        margin: 20px;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        box-shadow: 2px 2px 8px black, -2px 2px 8px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/hand-9723837_640.jpg" alt="" class="fleximg" />
+      <img
+        src="/images/hand-9723837_640.jpg"
+        alt=""
+        class="fleximg"
+      /><img src="/images/hand-9723837_640.jpg" alt="" class="fleximg" /><img
+        src="/images/hand-9723837_640.jpg"
+        alt=""
+        class="fleximg"
+      /><img src="/images/iceberg-9729316_1280.jpg" alt="" class="fleximg" />
+      <img src="/images/hand-9723837_640.jpg" alt="" class="fleximg" />
+      <img src="/images/hand-9723837_640.jpg" alt="" class="fleximg" />
+      <img src="/images/hand-9723837_640.jpg" alt="" class="fleximg" />
+    </div>
+  </body>
+</html>

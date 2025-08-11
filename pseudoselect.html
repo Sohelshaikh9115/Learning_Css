@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin: 20px;
+        padding: 50px;
+        color: blue;
+        font-size: 120px;
+      }
+      h1:hover {
+        color: brown;
+        text-shadow: 20px 20px 20px black;
+      }
+      img {
+        margin: 20px;
+        height: 300px;
+        width: 200px;
+        border: 4px solid red;
+      }
+      img:hover {
+        box-shadow: 5px 5px 8px green;
+      }
+      button {
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 5px;
+        background-color: green;
+        color: white;
+        border: 2px solid green;
+      }
+      button:hover {
+        border: none;
+        color: black;
+        background-color: aqua;
+        box-shadow: 3px 3px 6px aqua;
+        border-radius: 10px;
+      }
+      input:focus {
+        background-color: blanchedalmond;
+        color: black;
+      }
+      a:visited {
+        color: red;
+      }
+      .active:active {
+        color: green;
+        text-decoration: underline;
+      }
+      /* this pseudo selector help us to select the first letter of a paragraph */
+      p::first-letter {
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        font-size: 20px;
+      }
+      p::selection {
+        background-color: yellow;
+        color: black;
+      }
+      /* this pseudo selector help us to select the first line of a paragraph */
+      p::first-line {
+        font-weight: bold;
+        color: blue;
+      }
+      h2::first-letter {
+        color: green;
+        font-size: 30px;
+      }
+      h2::checkmark {
+        content: "✔️";
+        color: green;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non explicabo
+      nostrum illum. Ex saepe quod inventore, voluptate esse doloremque et nisi
+      blanditiis corporis, perferendis eligendi a, harum illum provident fuga
+      voluptatum! At sapiente expedita corrupti, alias in qui velit et totam
+      voluptate molestias, nam, earum non amet ipsa omnis. Exercitationem.
+    </p>
+<h2>HELLO</h2>
+    <h1>Hello World!</h1>
+    <img src="/images/hand-9723837_640.jpg" alt="" />
+    <a href="https://www.google.com/">Visited</a>
+    <h1 class="active">Hover Active</h1>
+    <input type="text" placeholder="text" />
+    <button>Hover</button>
+  </body>
+</html>
