@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        /* we make position relative to the div so that we can use left and top properties */
+
+        position: relative;
+        animation: firstanimation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        /* animation-delay: 4s; */
+        animation-direction: alternate-reverse;
+        background-position: center;
+        background-size: cover;
+      }
+      @keyframes firstanimation {
+        0% {
+          background-image: linear-gradient(120deg, red, green, blue);
+          left: 0px;
+          top: 0px;
+          
+          box-shadow: 10px 10px 15px black,-10px 10px 15px black;
+        }
+        25% {
+          background-image: url("/images/hand-9723837_640.jpg");
+          margin: 1px;
+          left: 300px;
+          top: 0px;
+          
+        }
+        50% {
+          background-image:url("/images/cat-9569386_1280.jpg");
+          left: 300px;
+          top: 300px;
+          
+        }
+        75% {
+          background-image:url("/images/iceberg-9729316_1280.jpg");
+          left: 0px;
+          top: 300px;
+          box-shadow: 10px 10px 15px black,-10px 10px 15px black;
+        }
+        100% {
+          background-image: linear-gradient(120deg,rgb(240, 128, 128),rgb(90, 236, 90),rgb(96, 96, 224));
+          left: 0px;
+          top: 0px;
+         
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
