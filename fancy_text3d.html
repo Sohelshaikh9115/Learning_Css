@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #000000;
+      }
+      .text-container {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 4px;
+        font-size: 100px;
+        font-weight: bold;
+        perspective: 100px;
+      }
+      .text-container b {
+        height: 100px;
+
+        /* box-shadow: 0px 10px 5px grey; */
+        background: linear-gradient(
+          120deg,
+          rgb(81, 255, 0),
+          rgb(255, 0, 0),
+          rgb(0, 17, 255)
+        );
+        background-clip: text;
+        color: transparent;
+        transform-origin: top center;
+        transform: rotate(-50deg);
+        animation: getup 2s infinite alternate;
+      }
+      .text-container b:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .text-container b:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+      .text-container b:nth-child(3) {
+        animation-delay: 0.50s;
+      }
+      .text-container b:nth-child(4) {
+        animation-delay: 0.75s;
+      }
+      .text-container b:nth-child(5) {
+        animation-delay: 1s;
+      }
+      @keyframes getup {
+          0% {
+            transform: rotate(-50deg);
+          }
+          100% {
+            transform: rotate(50deg);
+          }
+        }
+      /* @keyframes getup {
+        from {
+          transform: rotateX(-85deg);
+        }
+        10%,
+        50% {
+          transform: rotateX(-0);
+        }
+        60%,
+        to {
+          transform: rotateX(-85deg);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="text-container">
+      <b>S</b>
+      <b>O</b>
+      <b>H</b>
+      <b>E</b>
+      <b>L</b>
+    </div>
+  </body>
+</html>
